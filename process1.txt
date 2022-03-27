@@ -1,0 +1,12 @@
+macro "Count Count Cells" {
+    title = "Thresholded"
+    msg = "Click once threshold is done"
+    run("8-bit")
+    run("Threshold...")
+    waitForUser(title, msg);
+    run("Make Binary")
+    run("Fill Holes")
+    run("Watershed")
+    run("Analyze Particles...")
+    waitForUser(title, msg);
+}

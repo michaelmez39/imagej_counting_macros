@@ -4,7 +4,6 @@ macro "Count Count Cells" {
     run("8-bit")
     run("Threshold...")
     waitForUser(title, msg);
-    run("Make Binary")
     run("Fill Holes")
     run("Watershed")
     run("Analyze Particles...")

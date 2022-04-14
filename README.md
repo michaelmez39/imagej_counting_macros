@@ -1,8 +1,7 @@
 ## Macros for automated cell counting
-The `process1.txt` file has the start of a macro that automates the manual cell counting process.
+`process1.txt` Macro to count cells with black and white thresholding, one image at a time
+`process2.txt` Macro to count cells with color thresholding, count all images in a selected directory
+`process3.txt` Use ML model to count cells. Requires setup of DeepImageJ [setup instructions](https://deepimagej.github.io/deepimagej/download.html)and installation of the model [found here](https://github.com/michaelmez39/cell_counting_analysis/tree/ammar_branch) into DeepImageJ
+`process4.txt` Macro to threshold / count cells, uses one color channel of the image and thresholds with autothreshold, counts all images in a selected directory
 
-See the [imagej macro documentation](https://imagej.nih.gov/ij/developer/macro/macros.html) for more!
-
-Some additional features we may want to add could guess the size of the particles. Also, we may want to filter a certain color out of the image.
-
-Also, we may want to change some of the default options when we run a command, like this [example https://imagej.nih.narkive.com/9lJKFAIQ/macro-command-with-default-options](https://imagej.nih.narkive.com/9lJKFAIQ/macro-command-with-default-options)
+See the [imagej macro documentation](https://imagej.nih.gov/ij/developer/macro/macros.html) for more about writing macros!
